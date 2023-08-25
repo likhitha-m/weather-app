@@ -1,0 +1,404 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.fav-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.no-fav-container {
+  text-align: center;
+}
+
+.fav-description {
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 6rem;
+}
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 73px;
+  width: 960px; */
+  /* opacity: 0.2; */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* White background with 20% opacity */
+  color: white;
+  padding: 3vh;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 1px;
+}
+
+.weather-info-fav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.city {
+  /* margin: 0; */
+  font-weight: bold;
+}
+
+.temperature {
+  margin: 0;
+}
+
+.weather-info-fav- {
+  flex-grow: 1;
+  display: flex;
+}
+.weather-icon- {
+  /* padding-left: 10%; */
+  /* height: 38px;/ */
+  width: 36px;
+  /* margin-left: 20em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  margin-right: 10px;
+}
+.fav-temperature {
+  /* font-size: 32px; */
+  /* font-size: 22px;
+  margin-left: 5%; */
+  font-size: 30px;
+  margin: 5px;
+  width: 8rem;
+}
+
+.f-city {
+  width: 20%;
+  font-weight: bold;
+  padding: 10px;
+}
+.unit {
+  font-size: 20px;
+  margin: 1% !important;
+  left: 0% !important;
+  /* width:2rem !important; */
+}
+.remove-all-button {
+  float: right;
+  /* margin-bottom: 10px; */
+  /* background-color: #f44336; */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.remove-all-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 6rem;
+  color: white;
+}
+
+.remove-all-button {
+  float: right;
+  /* margin-bottom: 10px; */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.remove-all-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 7rem;
+  color: white;
+}
+.weather-inf {
+  flex-flow: row;
+  display: flex;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .favorites-list {
+    margin: 0 2rem;
+    padding-bottom: 1px;
+  }
+
+  .remove-all-container {
+    margin: 0 2rem;
+    padding: 3% 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weather-info-fav- {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* text-align: center;  */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weather-icon- {
+    display: initial;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* margin-right: 10px; */
+    /* margin: 0 auto; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fav-temperature {
+    font-size: 30px;
+    margin: 5px;
+    width: 5rem;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fav-description {
+    font-size: 14px;
+  }
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+  width: 80%;
+
+  max-width: 400px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.confirmation-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 2rem 0;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 10px 40px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.confirm-button {
+  background-color: #f76b1c;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.fav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .favorites-list,
+  .remove-all-container {
+    margin: 0 2rem;
+    padding-bottom: 1px;
+  }
+
+  .weather-info-fav- {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .weather-icon- {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding-left: 0;
+  }
+
+  .fav-temperature {
+    font-size: 24px;
+    margin: 5px;
+    width: 5rem;
+  }
+
+  .fav-description {
+    font-size: 18px;
+    padding-left: 10%;
+  }
+
+  .remove-all-container {
+    margin: 0 2rem;
+  }
+  .weather-inf {
+    flex-flow: row;
+    display: flex;
+    margin-left: 0;
+  }
+  .f-city {
+    /* width: 2%; */
+    width: auto !important;
+    font-weight: bold;
+    padding: 10px;
+  }
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.confirmation-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 2rem 0;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 10px 40px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.confirm-button {
+  background-color: #f76b1c;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 3vh;
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.weather-info-fav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.favorite-icon-container {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.responsive-weather {
+  text-align: center;
+  font-weight: bold;
+  /* margin-left: 2%; */
+  /* padding: 5px; */
+}
+
+.unit {
+  font-weight: 100;
+  padding: 0 5px;
+}
+
+.fav-description {
+  /* font-size: 22px;
+  color: white;
+  padding: 10px;
+  margin: 0; */
+  font-weight: lighter;
+}
+
+.remove-all-container {
+  padding: 10px;
+}
